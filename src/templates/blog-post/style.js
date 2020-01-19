@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   article {
     section {
       /* ===============================================
-      #  midashi
+      #  heading
       =============================================== */
       p {
         line-height: 2;

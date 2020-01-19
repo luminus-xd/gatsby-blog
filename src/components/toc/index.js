@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  .mokuji-midashi {
+  .toc-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  .mokuji {
+  .toc {
     width: 100%;
     background: var(--paleGray);
     padding: 20px 30px 10px 30px;
@@ -62,7 +62,7 @@ const Wrapper = styled.div`
         padding-left: 30px;
       }
     }
-    .mokuji-content {
+    .toc-content {
       overflow: hidden;
       transition: max-height 0.4s ease, padding 0s ease 0.3s;
       &.open {
@@ -77,7 +77,7 @@ const Wrapper = styled.div`
     }
   }
   @media screen and (max-width: 780px) {
-    .mokuji {
+    .toc {
       margin: 0 0 30px 0;
       padding: 20px 20px 10px 20px;
     }
@@ -87,19 +87,16 @@ const Wrapper = styled.div`
 const TOC = props => {
   const [open, switchOpen] = useState(false)
   return (
-    <Wrapper className="mokuji-wrapper">
-      <div className="mokuji">
-        <div className="mokuji-midashi">
+    <Wrapper className="toc-wrapper">
+      <div className="toc">
+        <div className="toc-heading" onClick={() => switchOpen(!open)}>
           <h4>目次</h4>
-          <div
-            onClick={() => switchOpen(!open)}
-            className={`open-button ${open ? "open" : "close"}`}
-          >
+          <div className={`open-button ${open ? "open" : "close"}`}>
             <FaCaretDown />
           </div>
         </div>
         <div
-          className={`mokuji-content ${open ? "open" : "close"}`}
+          className={`toc-content ${open ? "open" : "close"}`}
           dangerouslySetInnerHTML={{
             __html: props.data,
           }}
