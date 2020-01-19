@@ -76,7 +76,7 @@ const Polygon = props => {
           }
         }
       }
-      backgroundImage: file(absolutePath: { regex: "/poly-black.png/" }) {
+      backgroundImage: file(absolutePath: { regex: "/material-bg.png/" }) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
