@@ -5,7 +5,7 @@ description: フロントエンドエンジニアの目指し方を紹介しま�
 slug: frontend
 tags:
   - フロントエンド
-keywords: プログラミング
+keywords: HTML, CSS, JavaScript, JS, フロントエンド
 ---
 
 最初に一つ注意があります。
