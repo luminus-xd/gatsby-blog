@@ -57,7 +57,7 @@ function SEO({
         },
         {
           name: `google-site-verification`,
-          content: `kaAYWJ90RU9FB4430g_rUGp9L5rxhFvQc28yPan2zU8`,
+          content: `2yCmnAfMaC5adIBMLX2XVPF6DMoBMcQIpkbGASFxROE`,
         },
         {
           name: `description`,
