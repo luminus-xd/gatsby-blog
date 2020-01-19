@@ -42,8 +42,8 @@ const Wrapper = styled.div`
       font-weight: 600;
     }
     .gatsby-image-wrapper {
-      border-radius: 50%;
-      opacity: 0.8;
+      border-radius: 16px;
+      opacity: 1;
       margin-top: 15px;
       margin-bottom: 15px;
     }
