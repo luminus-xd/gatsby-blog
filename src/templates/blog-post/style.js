@@ -75,12 +75,11 @@ const Wrapper = styled.div`
           margin: auto;
           z-index: 0;
           opacity: 0.7;
-          filter: drop-shadow(0px 3px 15px rgba(245, 87, 108, 0.4));
         }
         &:after {
           content: "";
           position: absolute;
-          width: 70%;
+          width: 30%;
           height: 2px;
           bottom: 0;
           right: 0;

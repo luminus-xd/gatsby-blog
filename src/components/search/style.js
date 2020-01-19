@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     font-size: 0.88rem;
     padding-right: 10px;
     line-height: 1.8;
-    width: ${props => (props.focus ? "200px" : "100px")};
+    width: ${props => (props.focus ? "200px" : "130px")};
     transition: 0.3s ease;
     color: var(--text);
     letter-spacing: 0.03rem;
@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
   }
   svg {
     color: #fff;
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     margin-right: 10px;
     transition: 0.3s ease;
   }
@@ -65,7 +65,10 @@ export const ResultWrapper = styled.div`
     position: absolute;
     background: var(--background);
     border-radius: 3px;
-    box-shadow: rgba(20, 20, 20, 0.2) 1px 1px 20px;
+    box-shadow: 0 0px 2.6px rgba(0, 0, 0, 0.011),
+      0 0px 6.3px rgba(0, 0, 0, 0.016), 0 0px 11.8px rgba(0, 0, 0, 0.02),
+      0 0px 21px rgba(0, 0, 0, 0.024), 0 0px 39.3px rgba(0, 0, 0, 0.029),
+      0 0px 94px rgba(0, 0, 0, 0.04);
     width: var(--width);
     width: 520px;
     top: 70px;
@@ -86,8 +89,11 @@ export const ResultWrapper = styled.div`
     align-items: center;
     padding: 15px 20px;
     border-bottom: 1px solid var(--lightGray);
+    border-top-left-radius: 3px;
     b {
+      color: var(--primary);
       padding: 0 3px;
+      text-shadow: 0 0 8px var(--primaryLight);
     }
   }
   ul {
@@ -105,7 +111,7 @@ export const ResultWrapper = styled.div`
         &:hover {
           color: var(--text);
           background: var(--paleGray);
-          opacity: 1 !important;
+          opacity: 0.8 !important;
         }
       }
       &:last-child {

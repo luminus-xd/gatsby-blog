@@ -24,7 +24,6 @@ const Wrapper = styled.header`
     align-items: center;
     width: var(--width);
     .logo {
-      font-size: 1.1rem;
       font-weight: 600;
       text-transform: uppercase;
     }

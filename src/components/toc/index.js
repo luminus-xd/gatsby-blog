@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     h4 {
       font-weight: 600;
       padding-bottom: 5px;
@@ -91,7 +92,10 @@ const TOC = props => {
       <div className="toc">
         <div className="toc-heading" onClick={() => switchOpen(!open)}>
           <h4>目次</h4>
-          <div className={`open-button ${open ? "open" : "close"}`}>
+          <div
+            className={`open-button ${open ? "open" : "close"}`}
+            onClick={() => switchOpen(!open)}
+          >
             <FaCaretDown />
           </div>
         </div>

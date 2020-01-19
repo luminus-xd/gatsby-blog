@@ -48,7 +48,7 @@ const Style = styled.div`
       left: 0;
       top: 0;
       background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-      opacity: 1;
+      opacity: 0.3;
       z-index: 999;
       mix-blend-mode: overlay;
     }
@@ -60,7 +60,7 @@ const Style = styled.div`
       left: 0;
       top: 0;
       background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-      opacity: 0.6;
+      opacity: 0.85;
       z-index: 9999;
       mix-blend-mode: multiply;
     }

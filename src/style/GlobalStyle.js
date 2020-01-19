@@ -158,7 +158,7 @@ const GlobalStyle = createGlobalStyle`
   =============================================== */
   @media screen and (max-width: 780px) { 
     html, body {
-      font-size: 15px;
+      font-size: 16px;
     }
     .pc {
       display: none !important;
