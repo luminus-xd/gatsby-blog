@@ -52,7 +52,6 @@ const Wrapper = styled.header`
       position: absolute;
       left: 0;
       top: 0;
-      box-shadow: 0px 3px 15px rgba(245, 87, 108, 0.3);
     }
     color: var(--text);
     a {
