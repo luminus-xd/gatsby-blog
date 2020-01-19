@@ -11,8 +11,7 @@ const Wrapper = styled.header`
   height: 70px;
   padding-top: 5px;
   transition: 0.6s ease;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0);
   a {
     color: #fff;
     text-decoration: none;
@@ -25,7 +24,7 @@ const Wrapper = styled.header`
     align-items: center;
     width: var(--width);
     .logo {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
       text-transform: uppercase;
     }
@@ -44,7 +43,8 @@ const Wrapper = styled.header`
   }
   &.notHome,
   &.fixed {
-    background: var(--background);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
     .line {
       opacity: 1;
       transition: 0.3s ease-in-out;
