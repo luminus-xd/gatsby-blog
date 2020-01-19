@@ -31,7 +31,7 @@ const Wrapper = styled.div`
     }
   }
   .mokuji {
-    width: auto;
+    width: 100%;
     background: var(--paleGray);
     padding: 20px 30px 10px 30px;
     font-size: 0.9rem;
