@@ -11,7 +11,8 @@ const Wrapper = styled.header`
   height: 70px;
   padding-top: 5px;
   transition: 0.6s ease;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
   a {
     color: #fff;
     text-decoration: none;
@@ -24,6 +25,7 @@ const Wrapper = styled.header`
     align-items: center;
     width: var(--width);
     .logo {
+      font-size: 1.2rem;
       font-weight: 600;
       text-transform: uppercase;
     }
