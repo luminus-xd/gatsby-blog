@@ -49,7 +49,7 @@ const Wrapper = styled.header`
       transition: 0.3s ease-in-out;
       width: 100%;
       height: 5px;
-      background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
       position: absolute;
       left: 0;
       top: 0;

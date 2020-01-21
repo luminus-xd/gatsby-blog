@@ -16,7 +16,7 @@ const delay = props => {
 
 const Style = styled.div`
   background: ${props => props.background || "#999"};
-  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   width: ${props => props.width || "100%"};
   height: ${props => props.height || "400px"};
   position: fixed;
@@ -47,7 +47,7 @@ const Style = styled.div`
       content: "";
       left: 0;
       top: 0;
-      background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
       opacity: 0.3;
       z-index: 999;
       mix-blend-mode: overlay;
@@ -59,7 +59,7 @@ const Style = styled.div`
       content: "";
       left: 0;
       top: 0;
-      background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
       opacity: 0.85;
       z-index: 9999;
       mix-blend-mode: multiply;

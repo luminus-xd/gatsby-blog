@@ -62,7 +62,7 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="ELELINE BLOG" />
       <Polygon
         height="400px"
-        background="linear-gradient(45deg, #7bc6e2 0%, #fdb6c6 50%, #ffbe74 100%)"
+        background="linear-gradient(to right, #4facfe 0%, #00f2fe 100%);"
       />
       <Wrapper>
         <div className="message">

@@ -66,7 +66,7 @@ const Wrapper = styled.div`
         &:before {
           position: absolute;
           content: "";
-          background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+          background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
           width: 100%;
           height: 2px;
           bottom: 0;
@@ -79,7 +79,7 @@ const Wrapper = styled.div`
         &:after {
           content: "";
           position: absolute;
-          width: 30%;
+          width: 60%;
           height: 2px;
           bottom: 0;
           right: 0;
@@ -102,7 +102,7 @@ const Wrapper = styled.div`
           content: "";
           width: 3px;
           height: 100%;
-          background-image: linear-gradient(180deg, #f5576c 0%, #f093fb 100%);
+          background-image: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);
           position: absolute;
           left: 0;
           top: 0;
@@ -238,12 +238,7 @@ const Wrapper = styled.div`
       &:before {
         position: absolute;
         content: "";
-        background: linear-gradient(
-          45deg,
-          #c488d0 0%,
-          #fdb6c6 50%,
-          #ffbe74 100%
-        );
+        background-image: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
         width: 100%;
         height: 2px;
         top: 0;

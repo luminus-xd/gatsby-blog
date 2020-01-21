@@ -7,16 +7,16 @@ import { rgba } from "polished"
 export const colors = {}
 
 colors.background = "#fffeff"
-colors.text = "#617e8c"
+colors.text = "#55697d"
 
 colors.paleGray = "#f9f9f9"
 colors.lightGray = "#ddd"
 colors.gray = "#96acb3"
 
-colors.primaryPurple = "#9E69D7"
-colors.primary = "#FA96BB"
-colors.primaryLight = rgba("#FA96BB", 0.15)
-colors.primaryPale = rgba("#FA96BB", 0.07)
+colors.primaryPurple = "#00f2fe"
+colors.primary = "#4facfe"
+colors.primaryLight = rgba("#4facfe", 0.15)
+colors.primaryPale = rgba("#4facfe", 0.07)
 
 colors.secondary = "#FFB238"
 colors.danger = "#FF5C55"
