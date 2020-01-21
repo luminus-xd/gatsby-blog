@@ -45,7 +45,7 @@ const Wrapper = styled.header`
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(4px);
     .line {
-      opacity: 1;
+      opacity: 0.8;
       transition: 0.3s ease-in-out;
       width: 100%;
       height: 5px;

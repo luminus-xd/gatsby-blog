@@ -108,9 +108,9 @@ const Wrapper = styled.div`
           top: 0;
           bottom: 0;
           margin: auto;
-          border-radius: 5px;
+          border-radius: 8px;
           opacity: 0.6;
-          box-shadow: 0px 3px 15px rgba(245, 87, 108, 0.2);
+          box-shadow: 0px 3px 15px rgba(79, 172, 254, 0.2);
         }
       }
       h4 {
