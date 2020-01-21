@@ -150,7 +150,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   ::selection {
-    background: rgba(255, 250, 118, 0.35);
+    background: rgba(237, 41, 57, 0.21);
   }
 
   /* ===============================================

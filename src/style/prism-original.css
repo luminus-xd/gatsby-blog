@@ -1,14 +1,16 @@
 :root {
-  --purple: #bd93f9;
-  --pink: #ff79c6;
-  --green: #50fa7b;
-  --blue: #8be9fd;
+  --purple: #c792ea;
+  --pink: #e5c07b;
+  --green: #a9e481;
+  --blue: #61afef;
   --yellow: #f1fa8c;
   --orange: #ffb86c;
-  --color: #666;
+  --color: #666466;
+  --red: #e06c75;
+  --coral: #e06c75;
 }
 
-code {
+/* code {
   background: var(--primaryPale);
   border: none;
   text-shadow: none;
@@ -28,17 +30,45 @@ pre code {
   margin: 0;
   color: var(--text);
   font-weight: 400;
+} */
+
+.gatsby-code-title {
+  display: absolute;
+  top: 0;
+  left: 0;
+  background: #282c34;
+  width: 100%;
+  height: 28px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.gatsby-code-title span {
+  display: inline;
+  position: relative;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  color: #fffeff;
+  font-size: 0.84rem;
+  background-color: var(--primary);
+  background-image: linear-gradient(45deg, #4481eb 0%, #04befe 100%);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0.45em;
+  margin-left: 2em;
+  top: 1px;
 }
 
 .gatsby-highlight {
   width: 100%;
+  margin: 0 !important;
 }
 
-pre[class*="language-"], pre[class*="language-"]>code {
+pre[class*="language-"],
+pre[class*="language-"] > code {
   color: #eee;
-  background: #373949;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: .95em;
+  background: #282c34;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.95em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -48,7 +78,7 @@ pre[class*="language-"], pre[class*="language-"]>code {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  border-radius: 3px;
+  border-radius: 0 0 3px 3px;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -62,11 +92,12 @@ pre[class*="language-"] {
   margin: 0;
   overflow: visible;
   padding: 8px;
+  padding: 2rem 1.5em;
   border: 0;
   width: 100%;
 }
 
-pre[class*="language-"]>code {
+pre[class*="language-"] > code {
   position: relative;
   line-height: 1.35rem;
 }
@@ -79,7 +110,8 @@ code[class*="language"] {
   overflow: auto;
 }
 
-:not(pre)>code[class*="language-"], pre[class*="language-"] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -87,7 +119,7 @@ code[class*="language"] {
   font-size: 13px;
 }
 
-:not(pre)>code[class*="language-"] {
+:not(pre) > code[class*="language-"] {
   display: inline;
 }
 
@@ -141,20 +173,20 @@ pre[data-line] {
   background: #fffeff;
 }
 
-.line-numbers-rows>span {
+.line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.line-numbers-rows>span:before {
+.line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
   padding-left: 0.8em;
   padding-right: 0.8em;
   text-align: right;
-  height: 21.0px;
+  height: 21px;
 }
 
 @media screen and (max-width: 780px) {
@@ -174,12 +206,12 @@ pre[data-line] {
     padding: 15px 0;
     background: #fffeff;
   }
-  .line-numbers-rows>span {
+  .line-numbers-rows > span {
     pointer-events: none;
     display: block;
     counter-increment: linenumber;
   }
-  .line-numbers-rows>span:before {
+  .line-numbers-rows > span:before {
     content: counter(linenumber);
     color: #999;
     display: block;
@@ -204,53 +236,187 @@ pre[data-line] {
   user-select: none;
 }
 
-.command-line-prompt>span:before {
+.command-line-prompt > span:before {
   color: #999;
-  content: ' ';
+  content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.command-line-prompt>span[data-user]:before {
+.command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.command-line-prompt>span[data-user="root"]:before {
+.command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.command-line-prompt>span[data-prompt]:before {
+.command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 
-.keyword {
-  color: var(--pink);
-}
-
-.function-variable, .function {
-  color: var(--green);
-}
-
-.punctuation, .operator {
-  color: var(--pink);
-}
-
-.constant {
-  color: var(--green);
-}
-
-.string {
-  color: var(--yellow);
-}
-
-.selector {
+.token.atrule {
   color: var(--purple);
 }
 
-.property {
+.token.attr-name {
+  color: #ffcb6b;
+}
+
+.token.attr-value {
+  color: var(--green);
+}
+
+.token.attribute {
+  color: var(--green);
+}
+
+.token.boolean {
+  color: var(--orange);
+}
+
+.token.builtin {
+  color: #ffcb6b;
+}
+
+.token.cdata {
+  color: #80cbc4;
+}
+
+.token.char {
+  color: #80cbc4;
+}
+
+.token.class {
+  color: #ffcb6b;
+}
+
+.token.class-name {
+  color: var(--yellow);
+}
+
+.token.color {
+  color: var(--yellow);
+}
+
+.token.comment {
+  color: #546e7a;
+}
+
+.token.constant {
+  color: #ffcb6b;
+}
+
+.token.deleted {
+  color: var(--coral);
+}
+
+.token.doctype {
+  color: #546e7a;
+}
+
+.token.entity {
+  color: var(--coral);
+}
+
+.token.function {
   color: var(--blue);
 }
 
-.comment {
-  color: #aaa;
+.token.hexcode {
+  color: var(--yellow);
+}
+
+.token.id {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.token.important {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.token.inserted {
+  color: #80cbc4;
+}
+
+.token.keyword {
+  color: var(--purple);
+  font-style: italic;
+}
+
+.token.number {
+  color: #fd9170;
+}
+
+.token.operator {
+  color: #56b6c2;
+}
+
+.token.prolog {
+  color: #546e7a;
+}
+
+.token.property {
+  color: #80cbc4;
+}
+
+.token.pseudo-class {
+  color: var(--green);
+}
+
+.token.pseudo-element {
+  color: var(--green);
+}
+
+.token.punctuation {
+  color: #89ddff;
+}
+
+.token.regex {
+  color: var(--yellow);
+}
+
+.token.selector {
+  color: var(--coral);
+}
+
+.token.string {
+  color: var(--green);
+}
+
+.token.symbol {
+  color: var(--purple);
+}
+
+.token.tag {
+  color: var(--coral);
+}
+
+.token.unit {
+  color: var(--coral);
+}
+
+.token.url {
+  color: #fd9170;
+}
+
+.token.variable {
+  color: var(--coral);
+}
+
+.cooo {
+  color: #e5c07b;
+  color: #e06c75;
+  color: #5c6370;
+  color: #f44747;
+  color: #56b6c2;
+  color: #98c379;
+  color: #ffffff;
+  color: #7f848e;
+  color: #abb2bf;
+  color: #61afef;
+  color: #c678dd;
+  color: #d19a66;
 }

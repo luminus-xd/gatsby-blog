@@ -44,6 +44,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-prismjs-title",
+            options: {
+              className: "gatsby-code-title",
+            },
+          },
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               offsetY: 0,
