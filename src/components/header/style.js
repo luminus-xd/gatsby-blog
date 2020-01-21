@@ -48,7 +48,7 @@ const Wrapper = styled.header`
       opacity: 0.8;
       transition: 0.3s ease-in-out;
       width: 100%;
-      height: 5px;
+      height: 4px;
       background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
       position: absolute;
       left: 0;
