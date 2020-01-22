@@ -42,7 +42,7 @@ const Wrapper = styled.header`
   }
   &.notHome,
   &.fixed {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(4px);
     .line {
       opacity: 0.8;
