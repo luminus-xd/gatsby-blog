@@ -37,20 +37,20 @@ export const Wrapper = styled.div`
   }
   &.notHome,
   &.fixed {
-    background: var(--background);
+    /* background: var(--background); */
     input {
       color: var(--text);
       text-shadow: none;
       &::placeholder {
-        color: rgba(55, 55, 55, 0.3);
+        color: rgba(55, 55, 55, 0.6);
       }
     }
     border: 1px solid
       ${props =>
-        props.focus ? rgba(colors.primary, 0.6) : "rgba(65, 65, 65, 0.15)"};
+        props.focus ? rgba(colors.primary, 0.6) : "rgba(65, 65, 65, 0.24)"};
     svg {
       color: ${props =>
-        props.focus ? rgba(colors.primary, 0.8) : "rgba(65, 65, 65, 0.3)"};
+        props.focus ? rgba(colors.primary, 0.8) : "rgba(65, 65, 65, 0.6)"};
     }
   }
   @media screen and (max-width: 780px) {
