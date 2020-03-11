@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import toni from "../../images/eleline.png"
+import eleline from "../../images/eleline.png"
 
 function SEO({
   description,
@@ -126,7 +126,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
-  image: toni,
+  image: eleline,
   type: `article`,
   noindex: false,
 }

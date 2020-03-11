@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `ELELINE BLOG`,
     author: `ELELINE`,
-    description: `A blog powered by Gatsby`,
+    description: `Webフロントエンドエンジニアを目指しているELELINEが運営しているブログ、フロントのみならず様々なWeb技術について投稿していきます`,
     siteUrl: `https://eleline.netlify.com/`,
     social: {
       twitter: `eleline5`,
