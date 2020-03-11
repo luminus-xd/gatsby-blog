@@ -4,7 +4,7 @@ date: 2020-03-11T11:27:11+09:00
 description: React Hooksについての自分用メモ、Functional Componentを利用する際に必須と言える機能です。
 slug: react-hook
 tags:
-  - Frontend
+  - フロントエンド
   - React
 keywords: JavaScript, TypeScript, フロントエンド, React
 ---
@@ -90,40 +90,40 @@ MyContext.Provider が更新された場合に、このフックはその MyCont
 const themes = {
   light: {
     foreground: "#000000",
-    background: "#eeeeee"
+    background: "#eeeeee",
   },
   dark: {
     foreground: "#ffffff",
-    background: "#222222"
-  }
-};
+    background: "#222222",
+  },
+}
 
-const ThemeContext = React.createContext(themes.light);
+const ThemeContext = React.createContext(themes.light)
 
 const App: React.FC = () => {
   return (
     <ThemeContext.Provider value={themes.dark}>
       <Toolbar />
     </ThemeContext.Provider>
-  );
+  )
 }
 
-const Toolbar: React.FC<ToolbarProps> = props {
+const Toolbar: React.FC = props => {
   return (
     <>
       <ThemedButton />
     </>
-  );
+  )
 }
 
 const ThemedButton: React.FC = () => {
-  const theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext)
 
   return (
     <button style={{ background: theme.background, color: theme.foreground }}>
       I am styled by theme context!
     </button>
-  );
+  )
 }
 ```
 
