@@ -6,7 +6,7 @@ slug: react-hook
 tags:
   - Frontend
   - React
-keywords: HTML, CSS, JavaScript, JS, フロントエンド
+keywords: JavaScript, TypeScript, フロントエンド, React
 ---
 
 # React Hooks
