@@ -26,7 +26,7 @@ date: { 今日の日付 }
 description: { 記事の説明文 }
 slug: { スラッグ }
 tags: { タグ }
-keywords: { キーワード }
+keywords: { キーワード1, キーワード2 }
 
 ---
 
