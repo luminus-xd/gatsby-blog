@@ -9,7 +9,7 @@ tags:
 keywords: JavaScript, TypeScript, フロントエンド, React
 ---
 
-# React Hooks
+## React Hooks
 
 React に搭載されている関数コンポーネントを強力なものに変えることができる React Hooks についてのメモ
 
